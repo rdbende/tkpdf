@@ -71,7 +71,7 @@ class PdfView(ttk.Frame):
 
     def cget(self, key: str) -> Any:
         if key == "file":
-            return self._highlighter
+            return self._file
         else:
             return tk.Text.cget(self, key)
 
